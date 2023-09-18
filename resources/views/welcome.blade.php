@@ -17,8 +17,7 @@
             <h2>Simple QR Code</h2>
         </div>
         <div class="card-body">
-
-                        <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(200)->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9')); !!}">
+            <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(200)->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9')); !!}">
         </div>
     </div>
 
