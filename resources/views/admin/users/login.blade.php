@@ -13,7 +13,6 @@
     <div class="login-logo">
         <a href="#">
             <b>ĐĂNG NHẬP </b>
-            <img style="width: 20%" src="/template/images/icons/logo-01.png" alt="IMG-LOGO">
         </a>
     </div>
 

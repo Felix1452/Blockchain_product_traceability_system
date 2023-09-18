@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Admin\Users\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -153,3 +153,8 @@ Route::middleware(['auth'])->group(function(){
         });
     });
 });
+
+
+Route::get('/admin/users/login', [LoginController::class, 'index'])->name('login');
+Route::post('/admin/users/login', [LoginController::class, 'store']);
+Route::get('/dang-xuat',[LoginController::class,'dangxuat'])->name('dangxuat');
