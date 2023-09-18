@@ -18,8 +18,7 @@
         </div>
         <div class="card-body">
 
-{{--            {{ QrCode::format('png')->size(200)->backgroundColor(255,90,0)->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9')}}--}}
-            <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(200)->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9')); !!}">
+                        <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(200)->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9')); !!}">
         </div>
     </div>
 
