@@ -25,19 +25,19 @@
                 <td>{{$user->name}}</td>
                 <td>{{$user->email}}</td>
                 <td>
-                    @if($user->perrmission == 1)
+                    @if($user->active == 1)
                         Admin
-                    @elseif($user->perrmission == 2)
+                    @elseif($user->active == 2)
                         Quản lí
-                    @elseif($user->perrmission == 3)
+                    @elseif($user->active == 3)
                         Nhân viên
-                    @elseif($user->perrmission == 4)
+                    @elseif($user->active == 4)
                         Khách hàng
                     @else
                         Nhân viên thực tập
                     @endif
                 </td>
-                <td>{{$user->moblie}}</td>
+                <td>{{$user->mobile}}</td>
                 <td>{{$user->created_at}}</td>
                 <td>
                     <a style="margin-right: 5px" class="button btn-outline-warning btn-sm" href="/admin/users/edit/{{$user->id}} ">

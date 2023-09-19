@@ -9,7 +9,6 @@
     <div class="register-logo">
         <a href="#">
             <b>ĐĂNG KÍ</b>
-            <img style="width: 20%" src="/template/images/icons/logo-01.png" alt="IMG-LOGO"></a>
     </div>
     <div class="card">
         <div class="card-body register-card-body">

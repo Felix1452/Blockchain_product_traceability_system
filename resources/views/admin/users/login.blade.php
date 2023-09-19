@@ -22,7 +22,7 @@
 
             @include('admin.alert')
 
-            <form action="" method="post">
+            <form method="post">
                 <div class="input-group mb-3">
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email">
                     <div class="input-group-append">
@@ -57,6 +57,7 @@
                 @csrf
             </form>
         </div>
+        <a href="<?php echo route('register')?>" class="btn btn-light">Tôi chưa có tài khoản</a>
         <a class="btn btn-light" href="/" >Quay về trang chủ</a>
     </div>
 </div>

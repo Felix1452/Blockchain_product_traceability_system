@@ -22,6 +22,7 @@ class LoginController extends Controller
         ]);
     }
     public function store(Request $request){
+
         $this->validate($request ,[
             'email' => 'required|email',
             'password' => 'required'
@@ -30,7 +31,7 @@ class LoginController extends Controller
         if(Auth::attempt([
             'email'=>$request->input('email'),
             'password'=>$request->input('password'),
-            'perrmission'=>1
+            'active'=>1
         ], $request ->input('remember')
         )){
             session()->put("email", $request->input('email'));
@@ -43,7 +44,7 @@ class LoginController extends Controller
         }else if(Auth::attempt([
             'email'=>$request->input('email'),
             'password'=>$request->input('password'),
-            'perrmission'=>2
+            'active'=>2
         ], $request ->input('remember')
         )){
             session()->put("email", $request->input('email'));
@@ -55,7 +56,7 @@ class LoginController extends Controller
         }else if(Auth::attempt([
             'email'=>$request->input('email'),
             'password'=>$request->input('password'),
-            'perrmission'=>3
+            'active'=>3
         ], $request ->input('remember')
         )){
             session()->put("email", $request->input('email'));
@@ -66,7 +67,7 @@ class LoginController extends Controller
         }else if(Auth::attempt([
             'email'=>$request->input('email'),
             'password'=>$request->input('password'),
-            'perrmission'=>4
+            'active'=>4
         ], $request ->input('remember')
         )){
             session()->put("email", $request->input('email'));

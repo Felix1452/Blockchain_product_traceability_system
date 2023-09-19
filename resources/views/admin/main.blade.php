@@ -97,7 +97,7 @@
         <div class="float-right d-none d-sm-block">
 
         </div>
-        <strong>19004158</strong>
+        <strong>--------</strong>
     </footer>
 
 </div>
