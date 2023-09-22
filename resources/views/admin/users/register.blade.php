@@ -40,6 +40,21 @@
                     </div>
                 </div>
                 <div class="input-group mb-3">
+                    <input type="date" class="form-control" name="birth" placeholder="Ngày sinh">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-birthday-cake"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <select class="form-control" name="sex">
+                        <option value="nam">Nam</option>
+                        <option value="nu">Nữ</option>
+                        <option value="khac">Khác</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
                     <input type="password" class="form-control" name="password" placeholder="Password">
                     <div class="input-group-append">
                         <div class="input-group-text">

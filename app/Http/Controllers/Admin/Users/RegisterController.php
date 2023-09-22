@@ -23,7 +23,7 @@ class RegisterController extends Controller
             'name' => 'bail|required|',
             'email' => 'bail|required|email',
             'mobile' => 'bail|required|unique:users|max:11',
-            'password' => 'bail|required|min:8',
+            'password' => 'bail|required|min:6',
             'repass' => 'bail|required|same:password',
         ],
         [
@@ -37,6 +37,7 @@ class RegisterController extends Controller
             'repass.required' => 'Vui lòng nhập lại mật khẩu!',
             'repass.same' => 'Mật khẩu không giống!'
             ]);
+
         $result = $this->userService->create($request);
         if ($result){
             return redirect()->route('login');

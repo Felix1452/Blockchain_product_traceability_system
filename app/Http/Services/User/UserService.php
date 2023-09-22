@@ -20,6 +20,7 @@ class UserService
     }
     public function create($request){
         $a = DB::select('select email from users where email ="'.$request->input('email').'"');
+//        dd($a);
         try {
             if (sizeof($a) == 0){
                 if($request->input('uid') != null){
